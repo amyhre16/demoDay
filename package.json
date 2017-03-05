@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/amyhre16/demoDay#readme",
   "dependencies": {
+    "body-parser": "^1.17.0",
     "express": "^4.15.0",
     "method-override": "^2.3.7",
     "path": "^0.12.7",
