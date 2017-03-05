@@ -1,0 +1,32 @@
+{
+  "name": "demoday",
+  "version": "1.0.0",
+  "description": "An app that uses express server and sequelize to allow employers to log their information into my database so I can contact them the next day",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amyhre16/demoDay.git"
+  },
+  "keywords": [
+    "Demo",
+    "Day",
+    "Node",
+    "Express",
+    "Sequelize"
+  ],
+  "author": "Anthony Myhre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amyhre16/demoDay/issues"
+  },
+  "homepage": "https://github.com/amyhre16/demoDay#readme",
+  "dependencies": {
+    "express": "^4.15.0",
+    "method-override": "^2.3.7",
+    "path": "^0.12.7",
+    "sequelize": "^3.30.2"
+  }
+}
