@@ -36,8 +36,8 @@ db.sequelize({}).then(function() {
             if it is local, run on port 8080
             otherwise, run on the port determined by heroku
     */
-    app.listen(process.env.PORT || 8080, function(){
+    app.listen(process.env.PORT || 8080, function() {
         // console message so that I know the server is running
         console.log("App is listening");
-    });
-});
+    }); // end of app.listen
+}); // end of db.sequelize
