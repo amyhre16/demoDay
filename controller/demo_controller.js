@@ -8,9 +8,13 @@ module.exports = function(app) {
         response.render('register');
     });
 
+    app.get('/invalidEmail', function(request, response) {
+        response.render('invalidEmail');
+    });
+
     app.post('/registerVisitor', function(request, response) {
         console.log(request.body);
-        if (ValidateEmail(request.body.visitor_email) && request.body.visitor_name !== "") {
+        if (ValidateEmail(request.body.visitor_email)) {
             visitor.Visitor.create({
                 visitor_name: request.body.visitor_name,
                 visitor_email: request.body.visitor_email,
@@ -22,11 +26,8 @@ module.exports = function(app) {
             });
         }
 
-        else if (!ValidateEmail(request.body.visitor_email)) {
-            response.render('invalidEmail');
-        }
         else {
-            response.render('invalidName');
+            response.redirect('/invalidEmail');
         }
     });
 };

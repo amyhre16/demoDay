@@ -1,0 +1,24 @@
+<h1>Welcome to Anthony Myhre's Demo Day Registration Page!</h1>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="panel-title">Please fill out this form</div>
+    </div>
+    <div class="panel-body">
+        <form action="/registerVisitor?_method=POST" method="POST">
+            <label for="visitor_name">Name</label>
+            <input type="text" name="visitor_name" id="visitor_name" required/>
+
+            <label for="visitor_email">Email</label>
+            <input type="text" name="visitor_email" id="visitor_email" required/>
+
+            <label for="visitor_company">Company</label>
+            <input type="text" name="visitor_company" id="visitor_company" />
+
+            <label for="visitor_linkedin">LinkedIn</label>
+            <input type="text" name="visitor_linkedin" id="visitor_linkedin" />
+
+            <button class="btn btn-primary" type="submit"><em>Register Me!</em></button>
+        </form>
+    </div>
+</div>
