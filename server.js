@@ -30,7 +30,7 @@ require('./controller/demo_controller')(app);
     syncronize the models to the tables in the database
     because I don't want sequelize to drop the tables, I'm passing in an empty object to the sequelize method
 */
-db.sequelize({}).then(function() {
+db.sequelize.sync({}).then(function() {
     /*
         run the server
             if it is local, run on port 8080
