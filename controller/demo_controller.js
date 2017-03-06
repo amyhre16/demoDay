@@ -4,6 +4,10 @@
 var visitor = require('./../models');
 
 module.exports = function(app) {
+    app.get('/', function(request, response) {
+        response.render('register');
+    });
+
     app.post('/registerVisitor', function(request, response) {
         console.log(request.body);
         if (ValidateEmail(request.body.visitor_email) && request.body.visitor_name !== "") {
@@ -19,10 +23,10 @@ module.exports = function(app) {
         }
 
         else if (!ValidateEmail(request.body.visitor_email)) {
-            response.redirect("/invalidEmail");
+            response.render('invalidEmail');
         }
         else {
-            response.redirect("/invalidName");
+            response.render('invalidName');
         }
     });
 };
