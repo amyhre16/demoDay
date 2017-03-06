@@ -1,38 +1,34 @@
-<h1>Welcome to Anthony Myhre's Demo Day Registration Page!</h1>
 
-<div class="col-lg-4"></div>
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading" style="background-color: #270BFF">
+                <div class="panel-title"><strong>Fill out this form so I can connect with you!</strong></div>
+            </div>
+            <div class="panel-body">
+                <form action="/registerVisitor?_method=POST" method="POST">
+                    <label for="visitor_name">Name</label>
+                    {{!--<br>--}}
+                    <input class="form-control" type="text" name="visitor_name" id="visitor_name" style="font-style: italic; width: 100%; margin-bottom: 10px; padding-left: 11px; border-radius: 100px;" required/>
+                    {{!--<br>--}}
 
-<div class="col-lg-4">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <div class="panel-title">Please fill out this form</div>
-        </div>
-        <div class="panel-body">
-            <form action="/registerVisitor?_method=POST" method="POST">
-                <label for="visitor_name">Name</label>
-                {{!--<br>--}}
-                <input class="form-control" type="text" name="visitor_name" id="visitor_name" style="font-style: italic; width: 100%; margin-bottom: 10px; padding-left: 11px; border-radius: 100px;" required/>
-                {{!--<br>--}}
+                    <label for="visitor_email">Email</label>
+                    {{!--<br>--}}
+                    <input class="form-control" type="text" name="visitor_email" id="visitor_email" style="font-style: italic; width: 100%; margin-bottom: 10px; padding-left: 11px; border-radius: 100px;" required/>
+                    {{!--<br>--}}
 
-                <label for="visitor_email">Email</label>
-                {{!--<br>--}}
-                <input class="form-control" type="text" name="visitor_email" id="visitor_email" style="font-style: italic; width: 100%; margin-bottom: 10px; padding-left: 11px; border-radius: 100px;" required/>
-                {{!--<br>--}}
+                    <label for="visitor_company">Company</label>
+                    {{!--<br>--}}
+                    <input class="form-control" type="text" name="visitor_company" id="visitor_company" style="font-style: italic; width: 100%; margin-bottom: 10px; padding-left: 11px; border-radius: 100px;" />
+                    {{!--<br>--}}
 
-                <label for="visitor_company">Company</label>
-                {{!--<br>--}}
-                <input class="form-control" type="text" name="visitor_company" id="visitor_company" style="font-style: italic; width: 100%; margin-bottom: 10px; padding-left: 11px; border-radius: 100px;" />
-                {{!--<br>--}}
+                    <label for="visitor_linkedin">LinkedIn</label>
+                    {{!--<br>--}}
+                    <input class="form-control" type="text" name="visitor_linkedin" id="visitor_linkedin" style="font-style: italic; width: 100%; margin-bottom: 10px; padding-left: 11px; border-radius: 100px;" />
+                    {{!--<br>--}}
 
-                <label for="visitor_linkedin">LinkedIn</label>
-                {{!--<br>--}}
-                <input class="form-control" type="text" name="visitor_linkedin" id="visitor_linkedin" style="font-style: italic; width: 100%; margin-bottom: 10px; padding-left: 11px; border-radius: 100px;" />
-                {{!--<br>--}}
-
-                <button class="btn btn-primary" type="submit"><em>Register Me!</em></button>
-            </form>
+                    <button class="btn btn-primary" type="submit"><em>Register Me!</em></button>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="col-lg-4"></div>
