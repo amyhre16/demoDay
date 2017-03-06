@@ -21,7 +21,7 @@ module.exports = function(app) {
         else if (!ValidateEmail(request.body.visitor_email)) {
             response.redirect("/invalidEmail");
         }
-        else (response.body.visitor_name === "") {
+        else {
             response.redirect("/invalidName");
         }
     });
