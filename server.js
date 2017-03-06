@@ -4,6 +4,7 @@
 var express = require('express');
 var methodOverride = require('method-override');
 var bodyParser = require('body-parser');
+var exphbs = require('express-handlebars');
 
 // create connection to the express server
 var app = express();
@@ -25,6 +26,10 @@ app.use(methodOverride("_method"));
 
 // pass the server into controller/demo_controller.js so that the controller has access to the server
 require('./controller/demo_controller')(app);
+
+// set up app for handlebars
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.set('view engine', 'handlebars');
 
 /*
     syncronize the models to the tables in the database
