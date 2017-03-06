@@ -35,11 +35,9 @@ module.exports = function(app) {
 
 function ValidateEmail(mail) {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
-        // console.log("True");
         return true;
     }
     else {
-        // console.log("False");
         return false;
     }
 }
